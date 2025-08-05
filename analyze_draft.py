@@ -106,6 +106,8 @@ def compare_draft_picks(draft_picks, position_dict):
     :param draft_picks: List of DraftPick objects, sorted by draft order.
     :param position_dict: Dictionary with positions as keys and lists of PlayerStats as values.
     """
+    print("manager,round,pick,player,position,points,best_alternative,best_alternative_points,point_difference,was_best_pick")
+
     pick_ratings = {}
     for draft_pick in draft_picks:
         is_best_pick = 0
